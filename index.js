@@ -23,7 +23,7 @@ function getQuote(){
       //display author
       author.innerHTML = `...<i class='fas fa-pencil-alt'></i> ${quoteObject['quoteAuthor']}`;
       //share the quote on twitter  
-      twitter.setAttribute("href", `https://twitter.com/intent/tweet?text= ${quoteObject['quoteText']} - ${quoteObject['quoteAuthor']}`); 
+      twitter.setAttribute("href", `https://twitter.com/intent/tweet?text= ${quoteObject['quoteText'] + ' - ' + quoteObject['quoteAuthor']}`); 
     }); 
 }
 
